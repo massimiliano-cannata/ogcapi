@@ -14,3 +14,7 @@ This repositoriy concerns the work done by HEIG-VD; SUPSI; and University of Gen
 * docker start|stop gs_ogcapi
 * http://localhost:8080/geoserver
 * Documentation: https://docs.geoserver.org/latest/en/user/community/ogc-api/index.html
+
+=====
+Connect in SSH
+  docker exec -it <your container name> /bin/bash
