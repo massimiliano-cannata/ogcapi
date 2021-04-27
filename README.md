@@ -16,3 +16,11 @@ This repositoriy concerns the work done by HEIG-VD; SUPSI; and University of Gen
 * Documentation: https://docs.geoserver.org/latest/en/user/community/ogc-api/index.html
 
 > Connect in SSH: docker exec -it <your container name> /bin/bash
+
+## Installation FROST with SensorThingsAPI
+* wget https://raw.githubusercontent.com/FraunhoferIOSB/FROST-Server/master/scripts/docker-compose.yaml
+* wget https://gist.githubusercontent.com/hylkevds/4ffba774fe0128305047b7bcbcd2672e/raw/demoEntities.json
+* docker-compose up
+* curl -X POST -H "Content-Type: application/json" -d @demoEntities.json http://localhost:8080/FROST-Server/v1.1/Things
+* http://localhost:8080/FROST-Server/v1.0
+* Documentation: https://fraunhoferiosb.github.io/FROST-Server/
